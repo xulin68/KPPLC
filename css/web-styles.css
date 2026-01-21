@@ -1,0 +1,31 @@
+/*全局元素*/
+a {color:white;text-decoration: none;}
+body{padding:0px;margin: 0px;background:white;padding-top: 70px;}
+/*头部导航*/
+.up{position: absolute;bottom: 0px;left: 30px;display: none;}
+/*主图轮播*/
+.icon{width:100%;overflow: hidden;display: none;opacity:0;height: 500px;background-size：100% 100%;background-repead:no-repead;background-position: center top;}
+/*商品栏*/
+.wares{width:1024px;height:2950px;margin: 0 auto;margin-top: 20px;}
+/*.xuan{width:256px;height:245px;background: black;position: absolute;top:0px;opacity: 0.5;}*/
+.goods{width:250px;height:288px;background: white;padding-top: 35px;border: solid 1px #ccc;display: block;float: left;position:relative;}
+.w-img{width:180px;height: 180px;margin: 0 auto;margin-bottom:35px;overflow:hidden;}
+.w-img img{width: 180px;height: 180px;cursor: pointer;transition: all 2s;}
+.w-img:hover{transform: scale(1.2);}  
+.w-text{text-align: center;font-size: 14px;color:black;}
+.w-text2{text-align: center;font-size: 14px;}
+.w-money{text-align: center;color:#1F7BD0;line-height: 30px;font-size:20px;}
+#n32{width: 502px;margin-bottom: 30px;}
+#n31{width: 502px;margin-bottom: 30px;}
+.video{
+	width: 1032px;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+}
+.video iframe{
+	width: 450px;
+	height: 500px;
+}

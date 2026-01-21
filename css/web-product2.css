@@ -1,0 +1,118 @@
+.nav-container {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #000000;
+    position: relative;
+}
+
+.nav-bar {
+    width:100%;
+    height:60px;
+	color:#0;
+    line-height:60px;
+    margin: 0 auto;
+}
+.nav-bar .nav-logo{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.nav-bar .nav-logo img {
+    width: 75%;
+    margin-top: 12px;
+    margin-left: 50px;
+}
+
+.nav-shop {
+    width: 110px;
+    height: 50px;
+	margin-top: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+	color:#FFFFFF;
+    background-color: #ff3339;
+    float: right;
+}
+
+.nav-bar .nav-title{
+    width: 700px;
+    height: 50px;
+    float: left;
+}
+
+.nav-title ul li {
+    display: block;
+    height: 50px;
+	font-size:16px;
+    font-weight: bold;
+    margin: 0 28px;
+    float: left;
+}
+/*姜平添加结束*/
+
+/* 姜平添加 */
+.small_banner{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.banner-bar {
+    width:1200px;
+    height:50px;
+	color:#0;
+    line-height:50px;
+    margin: 0 auto;
+}
+
+.banner-bar.banner-home{
+    width: 270px;
+    height: 60px;
+    float: left;
+}
+
+.banner-bar.banner-home img {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.center-wrap {
+	width: 400px;
+    height: 60px;
+    float: left;
+    margin-left: 50px;
+}
+
+.center-wrap ul li {
+    display: block;
+    height: 60px;
+	font-size:16px;
+    font-weight: bold;
+    margin: 20px 20px;
+    float: left;
+}
+
+.small_banner .page-banner-heading {
+	font-size: 20px;
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: bold
+}
+
+.banner-shop {
+    width: 110px;
+    height: 50px;
+	margin: 5px 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+	color:#FFFFFF;
+    background-color: #1F7BD0;
+    float: right;
+}

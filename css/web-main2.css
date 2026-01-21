@@ -1,0 +1,332 @@
+body {
+	/*��߿��������� �߾�Ϊ0*/
+	margin: 0px 0px 0px 0px; 
+    min-width: 1240px;
+	padding-top: 70px; 
+	/*�߿����ʽ*/
+	border: 0px currentColor;
+}
+html, body {
+    min-height: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+}
+h1 {
+	margin: 0px auto auto 100px; padding: 0px; border: 0px currentColor;
+}
+h2 {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+h3 {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+h4 {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+h5 {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+h6 {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+hr {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+p {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+blockquote {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+dl {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+dt {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+dd {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+ul {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+ol {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+li {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+pre {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+
+fieldset {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+legend {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+button {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+input { /*�����*/
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+textarea { /**�ı���*/
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+th {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+td {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+html {
+	color: rgb(0, 0, 0);
+}
+body {
+	font-family: "�����п�", "Tahoma";
+	font-size: 7.5px;
+}
+button {
+	font-family: �����п�,"Tahoma"; font-size: 12px;
+}
+input {
+	font-family: �����п�,"Tahoma"; font-size: 12px;
+}
+select {
+	font-family: �����п�,"Tahoma"; font-size: 12px;
+}
+textarea {
+	font-family: �����п�,"Tahoma"; font-size: 12px;
+}
+ul {
+	list-style: none;
+}
+ol {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+dl {
+	list-style: none;
+}
+dd {
+	list-style: none;
+}
+dt {
+	list-style: none;
+}
+em {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+legend {
+	color: rgb(0, 0, 0);
+}
+fieldset {
+	border: 0px currentColor;
+}
+img {
+	border: 0px ;
+	vertical-align: middle;		/* 去掉不行，商城图标对不齐*/
+}
+label {
+	cursor: pointer;
+}
+button {
+	cursor: pointer;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+nav{
+	/*�����ƶ�*/
+	display: block;
+}
+
+.clearfix::after {
+	height: 0px; clear: both; display: block; content: "";
+}
+.clearfix{
+	zoom: 1;
+}
+
+/*JP加的ZYS改的*/
+/** ========================= head-nav =============================== */
+/*父级导航栏容器*/
+.nav-container {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+/*父级导航栏*/
+.nav-bar {
+    height:70px;
+    line-height:70px;
+	display: flex;
+	justify-content:space-between;
+
+}
+
+.nav-bar .nav-logo{
+	width: 270px;
+	height: 60px;
+	margin-left: 27px;
+}
+.nav-bar .nav-logo img {
+    width: 75%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+/*无序列表*/
+.nav-bar. nav-title{
+    width: 100px;
+    height: 50px;
+    float: left;
+	color:#000000;
+    margin-left: 500px;	/*整个nav-title都不起作用，源码里手动添加*/
+}
+.nav-title ul {
+    display: block;
+    height: 50px;
+	font-size:16px;
+    margin: 0 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+.nav-title li {
+    display: block;
+    height: 50px;
+	font-size:16px;
+}
+.nav-title{
+	    position: relative;
+}
+/*购物车*/
+.nav-shop {
+    width: 110px;
+    height: 50px;
+	margin-top: 10px;
+    float: left;
+	margin-left: 50px;
+/*    margin-right: 100px;
+    float: right;*/
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+	color:#FFFFFF;
+    background-color: #1F7BD0;
+
+}
+/*添加结束*/
+/***二级菜单**/
+.group {
+  color: #000;
+  font-size: 16px; /**二级菜单字体大小**/
+  width: 185px;
+  vertical-align: top;
+}
+.group a {
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: block;
+  text-decoration: none;
+}
+.group p:last-child,
+.group a:last-child {
+  margin-bottom: 0px;
+}
+.group a {
+  color: #000;
+}
+.group a:active {
+  color: #ff3339;
+  text-decoration: underline;
+}
+
+.group a:hover {
+  color: #1F7BD0;
+}
+.group .title {
+  color: #000;
+  font-weight: bold;
+}
+
+.group {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.group .type {
+  font-size: 20px;
+  line-height: 20px;
+  color: #FF3339;
+  margin-bottom: 24px;
+}
+.group .type .line {
+  width: 4px;
+  height: 20px;
+  background: #FF3339;
+  vertical-align: top;
+  margin-right: 14px;
+}
+.group .hot-prod {
+  width: 33.333%;
+  text-align: center;
+}
+.group .hot-prod img {
+  height: 200px;
+  width: 400px;
+}
+.group .hot-prod .line {
+  width: 30px;
+  height: 2px;
+  background: #979797;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.group .hot-prod .text {
+  font-size: 14px;
+  color: #FF3339;
+}
+.group .prod {
+  width: 25%;
+  height: 200px;
+  float: left;
+}
+.group .prod img {
+  height: 200px;
+  width: 300px;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	width: 200px;float:right;margin: 18px 18px 0px 0px;
+}
+/*导航栏/子导航样式*/
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	top: 0;/*用于父级导航*/
+	z-index: 99;
+}
+.c-pointer {
+	cursor: pointer;
+}
