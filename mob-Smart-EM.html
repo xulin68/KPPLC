@@ -1,0 +1,500 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>工贝Smart标准型扩展模块</title>
+    <link rel="stylesheet" href="css/mob-style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/mob-goods.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.onresize=widthTest;//当窗口改变宽度时执行此函数
+        function widthTest()
+        {
+           var winW = $(window).width();
+           if( $(window).width() > 991 ) 
+           {
+               window.location.href="web-Smart-EM.html";
+           }
+        }
+           var winW = $(window).width();
+           if( $(window).width() > 991 ) 
+           {
+               window.location.href="web-Smart-EM.html";
+           }
+    </script>
+    <script src="js/EM.js"></script>
+</head>
+<body>
+    <!--回到顶部-->
+    <div class="box"><img src="image/top.png"></div>
+	<!-- 标题栏 -->
+	<div class="top">
+		<a href="mob-index.html"><img src="image/back.png" style="width: 40px;height: 40px;margin-top: 4px;margin-left: 4px;"></a>
+		<img src="image/logo2.png" style="width: 130px;margin-top:4px;margin: 0 auto;z-index: 100"/>
+		<!--<div class="shop">
+			<img src="image/gouwuche.png" class="shop_img" onclick="shop()">
+			<div class="banner" onclick="shop()" style="margin-top: 0px;">
+				<img src="image/tmall_icon.png">
+				<div><a href="https://gongbei.tmall.com//"style="font-size:25px;color:rgb(120,120,120);">天猫旗舰店</a></div>
+			</div>
+			<div class="banner" onclick="shop()">
+				<img src="image/jd_icon.png">
+				<div><a href="http://gongbei.jd.com/"style="font-size:25px;color:rgb(120,120,120);">京东旗舰店</a></div>
+			</div>
+			<div class="banner" onclick="shop()">
+				<img src="image/taobao_icon.png">
+				<div><a href="https://shop459074486.taobao.com/"style="font-size:25px;color:rgb(120,120,120);">淘宝工厂店</a></div>
+			</div>
+		</div>-->
+		<script>
+			function shop(url){
+			var s=document.getElementsByClassName('shop')
+			if(s[0].offsetHeight>50)
+			{
+				s[0].style.height='50px'
+			}
+			else
+			{
+				s[0].style.height='185px'
+				}
+			}
+		</script>
+	</div>
+	<!--大图-->
+    <!--图片建议700*700-->
+    <div class="pic" style="height: 320px;width: 320px;margin: auto;margin-top:50px;">
+  		<img src="image/SmartEM/EM_DE16.jpg" alt="图片" class="icon sub" style="display: block;opacity: 1;">
+  		<img src="image/SmartEM/EM_QR16.jpg" alt="图片" class="icon sub">
+  		<img src="image/SmartEM/EM_DT16.jpg" alt="图片" class="icon sub">
+		<img src="image/i-left.png" style="position: absolute;width: 70px;top:200px;left: 0px;opacity: 0.6;z-index:20;" onClick="ImgShow(0)"/>
+  		<img src="image/i-right.png" style="position: absolute;width: 70px;top:200px;right: 0px;opacity: 0.6;z-index:20;" onClick="ImgShow(1)"/>
+	</div>
+	<!-- 图片点 -->
+    <div class="NumText">
+        <div style="width: auto;width:30px;height: 40px;margin: 0 auto;">
+            <div class="numcode"></div>
+            <div class="numcode">&nbsp;/&nbsp;</div>
+            <div class="numcode"></div>
+        </div>
+    </div>
+    <!--index-->
+    <div class="nav-div"> <!--方框位置-->
+        <div class="tr"></div>
+        <div class="title" onclick="Navshow(0,1)">
+                产品介绍
+        </div>
+        <div class="title"onclick="Navshow(135,2)">
+                相关下载
+        </div>
+        <!--<div class="title" onclick="Navshow(270,3)">
+                地址计算
+        </div>-->
+    </div>
+    <!--商品详情-->
+    <div class="xiangqing" style="display:block;">
+       <div class="video" src="https://v.qq.com/txp/iframe/player.html?vid=p30895t881r/-/./image/SmartEM/EM_COVER1.jpg" onclick="video(this)">
+        </div>
+        <!--<div class="video" src="https://v.qq.com/txp/iframe/player.html?vid=a0980sh2nwh/-/./image/SmartEM/EM_RUANJIAN_FP.jpg" onclick="video(this)">
+        </div>
+        <div class="video" src="https://v.qq.com/txp/iframe/player.html?vid=m3100v8gf7b/-/./image/SmartEM/EM_MODBUS_FP.jpg" onclick="video(this)">
+        </div>-->
+		<!--选型说明-->
+		<div style="font-size: 16px;margin:0 auto;width:90%;border-bottom:solid 1px #CCCCCC;color: steelblue;font-weight: bolder;padding-bottom:10px;">产品特点</div>
+        <ul>
+			<li>与原厂相同型号的模块，支持通道级别组态，可设置通道类型、量程范围、报警设置、滤波设置。</li>
+			<li>首创设计大点数模块，如EM AE32，32路模拟量输入模块，组态时只需选择EM DP01即可使用。</li>
+			<li>使用工贝主机，可以最多挂12个工贝扩展模块。</li>
+        </ul>
+        <div style="font-size: 16px;margin:0 auto;width:90%;border-bottom:solid 0px #CCCCCC;color: steelblue;font-weight: bolder;padding-bottom:10px;">选型说明</div>
+		<div class="divCons" id="content" >
+			<div class="padtop paramtable">
+				<div align="center">
+					<div align="center">
+						<table class="MsoNormalTable" border="1" cellspacing="0"
+							cellpadding="1" style="text-align: center; border: none;"
+							align="center">
+							<tbody>
+								<tr>
+									<td width="210" align="center" bgcolor="#CCCCCC">数字量模块<br></td>
+									<td width="400" align="center" bgcolor="#CCCCCC">资源<br></td>
+									<td width="150" align="center" bgcolor="#CCCCCC">组态选型<br></td>
+									<td width="450" align="center" bgcolor="#CCCCCC">订货号<br></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DE08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DE16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DE16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DE16-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DE32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">32输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DE32-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DR08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8继电器输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DR08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DR08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM QR16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16继电器输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM QR16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2QR16-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM QR32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">32继电器输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2QR32-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DT08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8晶体管输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DT08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DT08-0AA0<o:p></o:p></p></td>
+								</tr><tr>
+									<td><p style="text-align: center;">EM QT16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16晶体管输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM QT16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2QT16-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM QT32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">32晶体管输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2QT32-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DR16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8入8继电器出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DR16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DR16-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DR32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16入16继电器出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DR32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DR32-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DT16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8入8晶体管出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DT16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DT16-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM DT32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16入16晶体管出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM DT32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-2DT32-0AA0<o:p></o:p></p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div class="padtop paramtable">
+				<div align="center">
+					<div align="center">
+						<table class="MsoNormalTable" border="1" cellspacing="0"
+							cellpadding="1" style="text-align: center; border: none;"
+							align="center">
+							<tbody>
+								<tr>
+									<td width="210" align="center" bgcolor="#CCCCCC">模拟量模块<br></td>
+									<td width="400" align="center" bgcolor="#CCCCCC">资源<br></td>
+									<td width="150" align="center" bgcolor="#CCCCCC">组态选型<br></td>
+									<td width="450" align="center" bgcolor="#CCCCCC">订货号<br></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AE04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4(电压或电流)输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AE04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AE04-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8(电压或电流)输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AE08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AE16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16(电压或电流)输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AE16-0AA0<o:p></o:p></p></td>
+								</tr>
+							    <tr>
+									<td><p style="text-align: center;">EM AE32<o:p></o:p></p></td>
+									<td><p style="text-align: center;">32(前8路电压或电流，后24路电流)输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AE32-0AA0<o:p></o:p></p></td>
+							    </tr>
+							    <tr>
+								    <td><p style="text-align: center;">EM AQ02<o:p></o:p></p></td>
+								    <td><p style="text-align: center;">2(电压和电流)输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AQ02<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AQ08-0AA0<o:p></o:p></p></td>
+							    </tr>
+							    <tr>
+									<td><p style="text-align: center;">EM AQ04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4(电压和电流)输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AQ04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AQ08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AQ08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8(电压和电流)输出<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AQ08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AM03<o:p></o:p></p></td>
+									<td><p style="text-align: center;">2入1出(电压和电流)<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AM03<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AM03-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AM06<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4入2出(电压和电流)<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AM06<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AM06-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AM12<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8入4出(电压和电流)<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AM12-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AM16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8入8出(电压和电流)<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AM16-0AA0<o:p></o:p></p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div class="padtop paramtable">
+				<div align="center">
+					<div align="center">
+						<table class="MsoNormalTable" border="1" cellspacing="0"
+							cellpadding="1" style="text-align: center; border: none;"
+							align="center">
+							<tbody>
+								<tr>
+									<td width="250" align="center" bgcolor="#CCCCCC">温度模块<br></td>
+									<td width="100" align="center" bgcolor="#CCCCCC">资源<br></td>
+									<td width="150" align="center" bgcolor="#CCCCCC">组态选型<br></td>
+									<td width="450" align="center" bgcolor="#CCCCCC">订货号<br></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AR02<o:p></o:p></p></td>
+									<td><p style="text-align: center;">2路PT100输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AR02<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AR02-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AR04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4路PT100输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AR04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AR04-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AR08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8路PT100输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#e85454">EM AE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AR08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AT04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4路K型热电偶<o:p></o:p></p></td>
+									<td><p style="text-align: center;">EM AT04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AT04-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AT08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8路K型热电偶<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#e85454">EM AE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AT08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AN04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4路NTC(10K,3950)<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#347054">EM AE04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AN04-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AN08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8路NTC(10K,3950)<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#e85454">EM AE08<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AN08-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AN16<o:p></o:p></p></td>
+									<td><p style="text-align: center;">16路NTC(10K,3950)<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AN16-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM EN88<o:p></o:p></p></td>
+									<td><p style="text-align: center;">8路NTC,8路模拟量输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3EN88-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM EN4C<o:p></o:p></p></td>
+									<td><p style="text-align: center;">12路NTC,4路模拟量输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3EN4C-0AA0<o:p></o:p></p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			
+			<div class="padtop paramtable">
+				<div align="center">
+					<div align="center">
+						<table class="MsoNormalTable" border="1" cellspacing="0"
+							cellpadding="1" style="text-align: center; border: none;"
+							align="center">
+							<tbody>
+								<tr>
+									<td width="250" align="center" bgcolor="#CCCCCC">称重模块<br></td>
+									<td width="100" align="center" bgcolor="#CCCCCC">资源<br></td>
+									<td width="150" align="center" bgcolor="#CCCCCC">组态选型<br></td>
+									<td width="450" align="center" bgcolor="#CCCCCC">订货号<br></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AW01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">1路称重通道输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AW01-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AW02<o:p></o:p></p></td>
+									<td><p style="text-align: center;">2路称重通道输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AW02-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+									<td><p style="text-align: center;">EM AW04<o:p></o:p></p></td>
+									<td><p style="text-align: center;">4路称重通道输入<o:p></o:p></p></td>
+									<td><p style="text-align: center;"><p style="color:#0066FF">EM DP01<o:p></o:p></p></td>
+									<td><p style="text-align: center;">GB288-3AW04-0AA0<o:p></o:p></p></td>
+								</tr>
+								<tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+		
+        <div style="font-size: 16px;margin:0 auto;width:90%;border-bottom:solid 1px #CCCCCC;color: steelblue;font-weight: bolder;padding-bottom:10px;">接线图</div>
+		<img src="image/SmartEM/EM_DE08接线图.jpg" />
+		<img src="image/SmartEM/EM_DE16接线图.jpg" />
+		<img src="image/SmartEM/EM_DE32接线图.jpg" />
+		<img src="image/SmartEM/EM_DR08接线图.jpg" />
+		<img src="image/SmartEM/EM_QR16接线图.jpg" />
+		<img src="image/SmartEM/EM_QR32接线图.jpg" />
+		<img src="image/SmartEM/EM_DR16接线图.jpg" />
+		<img src="image/SmartEM/EM_DR32接线图.jpg" />
+		<img src="image/SmartEM/EM_DT08接线图.jpg" />
+		<img src="image/SmartEM/EM_QT16接线图.jpg" />
+		<img src="image/SmartEM/EM_QT32接线图.jpg" />
+		<img src="image/SmartEM/EM_DT16接线图.jpg" />
+		<img src="image/SmartEM/EM_DT32接线图.jpg" />
+		<img src="image/SmartEM/EM_AE04接线图.jpg" />
+		<img src="image/SmartEM/EM_AE08接线图.jpg" />
+		<img src="image/SmartEM/EM_AE16接线图.jpg" />
+		<img src="image/SmartEM/EM_AE32接线图.jpg" />
+		<img src="image/SmartEM/EM_AQ02接线图.jpg" />
+		<img src="image/SmartEM/EM_AQ04接线图.jpg" />
+		<img src="image/SmartEM/EM_AQ08接线图.jpg" />
+		<img src="image/SmartEM/EM_AM03接线图.jpg" />
+		<img src="image/SmartEM/EM_AM06接线图.jpg" />
+		<img src="image/SmartEM/EM_AM12接线图.jpg" />
+		<img src="image/SmartEM/EM_AM16接线图.jpg" />
+		<img src="image/SmartEM/EM_AR02接线图.jpg" />
+		<img src="image/SmartEM/EM_AR04接线图.jpg" />
+		<img src="image/SmartEM/EM_AR08接线图.jpg" />
+		<img src="image/SmartEM/EM_AT04接线图.jpg" />
+		<img src="image/SmartEM/EM_AT08接线图.jpg" />
+		<img src="image/SmartEM/EM_AN04接线图.jpg" />
+		<img src="image/SmartEM/EM_AN08接线图.jpg" />
+		<img src="image/SmartEM/EM_AN16接线图.jpg" />
+		<img src="image/SmartEM/EM_EN88接线图.jpg" />
+		<img src="image/SmartEM/EM_EN4C接线图.jpg" />
+		<img src="image/SmartEM/EM_AW01接线图.jpg" />
+		<img src="image/SmartEM/EM_AW02接线图.jpg" />
+		<img src="image/SmartEM/EM_AW04接线图.jpg" />
+
+		<!--加一行空白边  -->
+        <div style="padding-bottom:10px;"></div>   
+    </div>
+    <!--download-->
+    <div class="download"style="display:none;">
+        <div class="d-body">
+            <a href="./file/PLC_SMART/【工贝电子】GB Smart标准型PLC产品说明书.pdf">
+            	<div class="d-text">【工贝电子】GB Smart标准型PLC产品说明书</div>
+            </a>
+        </div>
+        <div class="d-body">
+            <a href="./file/PLC_SMART/【称重模块】EM AW01_2_4使用说明.pdf">
+            	<div class="d-text">【称重模块】EM AW01_2_4使用说明</div>
+            </a>
+        </div>
+        <div class="d-body">
+            <a href="./file/PLC_SMART/【称重模块】EM AW01_2_4测试工程.rar">
+            	<div class="d-text">【称重模块】EM AW01_2_4测试工程</div>
+            </a>
+        </div>
+        <div class="d-body">
+            <a href="./file/【配置软件】工贝485模块配置软件.rar">
+            	<div class="d-text">【称重模块】EM AW01_2_4的485口上位机调试软件</div>
+            </a>
+        </div>
+        <div class="d-body">
+            <a href="./file/PLC_SMART/【接线图】工贝Smart标准型PLC 包括CAD和EPLAN图纸.rar">
+            	<div class="d-text">【接线图】工贝Smart标准型PLC 包括CAD和EPLAN图纸</div>
+            </a>
+        </div>
+	    <div id='app'></div>
+    </div>
+    <!--jisuan-->
+    <!--<div class="jisuan"style="display:none;">	
+	    <div id='app'></div>		
+	</div>-->
+    
+    <div class="foot">
+        <div class="con">
+            <div class="foot_cop_left">
+                <i>Copyright © 2019 济南工贝电子科技有限公司 版权所有 <a href="http://beian.miit.gov.cn" target="_blank" style="color:  #878787;">
+                	鲁ICP备18000413号</a></i>
+                <div style="display:none"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+  <script src="js/mob-move.js"></script>  <!--二级目录折叠 -->

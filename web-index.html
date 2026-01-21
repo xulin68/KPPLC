@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="济南工贝电子科技有限公司，高新技术企业，国产PLC知名厂商，致力于国产PLC的研发、生产、销售。现有70多款，累计出货10万台，销往70多个国家。">
+<title>济南工贝电子科技有限公司</title>
+<meta name="keywords" content="济南工贝电子科技有限公司 国产PLC 工贝PLC 工贝电子 CPU224XP CPU224 无负压供水控制器 ">
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/web-main.css">
+<link rel="stylesheet" type="text/css" href="css/web-styles.css">
+<style type="text/css">
+    .foot{
+    	width: 100%;
+    	height: 70px;
+    	background: #515151;
+    }
+    .con{
+    	width: 100%;
+    	margin: 0 auto;
+    	position: relative;
+    }
+    .foot_cop_left{
+    	width: 90%;
+    	margin: 0 auto;
+    	float: none;
+    }
+    .foot_cop_left i{
+    	text-align: center;
+    	font-size: 10px;
+    	color: #878787;
+    	display: block;
+    	padding-top: 10px;
+    	padding-bottom: 8px;
+    	font-style: normal;
+    }
+.spot{
+	height: 13px;
+	width: auto;
+	float: right;
+	right:0px;
+	display: flex;
+	top:520px;
+	margin: -30px 10px 0px 0px;
+		}
+.dian{
+	width: 15px;
+	height: 15px;
+	border-radius:50%;
+	margin: 0px 2px;
+	border: solid 2px #404040;
+	}
+.dian-show{
+	background: #1F7BD0;
+	border:none;
+	margin-top: 2px;
+}
+</style>
+<script>
+        window.onresize=widthTest;//当窗口改变宽度时执行此函数
+        function widthTest()
+        {
+           var winW = $(window).width();
+           if( $(window).width() <= 991 ) 
+           {
+               window.location.href="mob-index.html";
+           }
+        }
+         if( $(window).width() <= 991 ) 
+           {
+               window.location.href="mob-index.html";
+           }
+</script>
+</head>
+<body>
+<!-- 导航 -->
+<div class="nav-container clearfix" > <!--  nav(navigation导航)，Container(容器) -->
+	<div class="nav-bar clearfix" id="navbar" >
+        <!-- 导航-logo -->
+        <div class="nav-logo"><a href="web-index.html"title="济南工贝电子科技有限公司">
+            <img alt="" src="image/logo2.png" style="width:240px;height:60px"></a>
+        </div>
+        <!-- 导航-标题 --> 
+        <div class="nav-title" >
+            <ul>
+			    <!-- js showDiv方法已经添加div后缀，每个二级菜单都需要将id设置成本li的id + div 的名字，本例对应：224div-->
+			    <!-- <li id="101"要和后文对应，重要   -->
+			    <!-- upshow()在web-index.js里面定义的，如果第一个参数是1，函数才运行   -->
+			    <!-- upshow(1,4,0)最后一个参数要按序增加，要和后文对应，重要   -->
+			    <!-- 箭头位置在下方段落第五行最右侧left:50px修改   -->
+                <li id="101"  
+				onmouseover="showDiv(this.id,1);upshow(1,4,0)" 
+				onmouseout="upshow(0,1,1)"
+				onclick="showDiv(this.id,1)">
+				<a _v-133e68dd href="#" style="color:#6A6A6A">Smart PLC∨</a><img src="image/up.png"/ class="up" style="left: 50px;">
+				</li>
+				
+                <li id="102"
+				onmouseover="showDiv(this.id,2);upshow(1,4,1)"
+				onmouseout="upshow(0,2,2)"
+				onclick="showDiv(this.id,2)">
+				<a _v-133e68dd href="#" style="color:#6A6A6A">200 PLC∨</a><img src="image/up.png"/ class="up" style="left: 230px;">
+				</li>
+				
+                <li id="103"
+				onmouseover="showDiv(this.id,3);upshow(1,4,2)"
+				onmouseout="upshow(0,3,3)"
+				onclick="showDiv(this.id,3)">
+				<a _v-133e68dd href="#" style="color:#6A6A6A">IO扩展∨</a><img src="image/up.png"/ class="up" style="left: 380px;">
+				</li>
+				
+                <li id="104"
+				onmouseover="showDiv(this.id,4);upshow(1,4,3)"
+				onmouseout="upshow(0,4,4)"
+				onclick="showDiv(this.id,4)">
+				<a _v-133e68dd href="#" style="color:#6A6A6A">一体机&amp变送器∨</a><img src="image/up.png"/ class="up" style="left: 580px;">
+				</li>
+				
+                <li><a href="web-PLC_Guide.html" title="资料下载说明和PLC选型指南" target="_blank" style="color:#6A6A6A">资料&amp选型</a></li>
+            </ul>
+        </div>
+		<!-- 导航-商城 --> 
+		<!--<div class="nav-shop">
+			<img src="image/cart.png"><a href="http://shop459074486.taobao.com" target="_blank" 
+			style="color:#FFFFFF"> 商 城</a>
+		</div>-->
+    </div>
+	<!--产品二级菜单 Smart系列-->
+	<div id="101div" class="hiddenDiv" style="position: fixed; top: 70px; background:#ffffff; z-index: 6; width: 100%; text-align: center; 
+		box-shadow: rgb(136, 136, 136) 0px 0px 1px 1px; display: none; filter:alpha(Opacity=20);-moz-opacity:0.9;opacity: 0.9;color:#000;"
+		onmouseleave="HideDiv(101,0)">  <!-- hidediv第一个参数是隐藏哪个div，第二个参数是隐藏上箭头，从0开始-->
+		<div class="clearfix" style="width:100%;line-height: 1;background: white;top: 70px;">
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-SR_ST.html" target="_blank" style="color:#1F7BD0"><span >Smart标准型主机</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SR_ST/SR20_01')"  href="web-SR_ST.html" target="_blank">CR10/14/20/30/40/60</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SR_ST/SR20_01')"  href="web-SR_ST.html" target="_blank">SR(T)20/30/40/60</a>
+				<p class="title" ><a href="web-Smart-EM.html" target="_blank"><span>Smart标准数字量模块<br/></span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_DE08')"  href="web-Smart-EM.html" target="_blank">EM DE08/16/32</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_QR16')"  href="web-Smart-EM.html" target="_blank">EM DR08/QR16/32</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_QT16')"  href="web-Smart-EM.html" target="_blank">EM DT08/QT16/32</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_DR16')"  href="web-Smart-EM.html" target="_blank">EM DR/T16/32</a>
+				<p class="title" ><a href="web-Smart-EM.html" target="_blank"><span>Smart标准模拟量模块<br/></span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AE08')"  href="web-Smart-EM.html" target="_blank">EM AE04/08/16/32</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AQ02')"  href="web-Smart-EM.html" target="_blank">EM AQ02/4/8</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AM06')"  href="web-Smart-EM.html" target="_blank">EM AM03/6/12/16</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-Smart-EM.html" target="_blank"><span>Smart标准温度模块<br/></span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AR04')"  href="web-Smart-EM.html" target="_blank">EM AR02/4/8</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AT04')"  href="web-Smart-EM.html" target="_blank">EM AT04/8</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AN16')"  href="web-Smart-EM.html" target="_blank">EM AN04/8/16</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_EN88')"  href="web-Smart-EM.html" target="_blank">EM EN88/EN4C</a>
+				<p class="title" ><a href="web-Smart-EM.html" target="_blank"><span>Smart称重模块<br/></span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartEM/EM_AW04')"  href="web-Smart-EM.html" target="_blank">EM AW01/2/4</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-SB.html" target="_blank"><span>Smart信号板</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_CM01')"  href="web-SB.html" target="_blank">SB CM01/2</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_DE02')"  href="web-SB.html" target="_blank">SB DE02/4/6</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_QT02')"  href="web-SB.html" target="_blank">SB QT02/4/6/DT04</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_AE02')"  href="web-SB.html" target="_blank">SB AE01/2/4/6</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_AE02')"  href="web-SB.html" target="_blank">SB AQ01/2/4</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_AM03')"  href="web-SB.html" target="_blank">SB AM03/4/5/6</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartSB/SB_AR02')"  href="web-SB.html" target="_blank">SB AR02/4/AN04/6/AT04</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-GR_GT.html" target="_blank" style="color:#1F7BD0"><span>Smart经济型主机</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('GR_GT/GR10XP_01')"  href="web-GR_GT.html" target="_blank" >GR(T)10/14/20/24/30/40</a>
+				<p class="title" ><a href="web-GR_GT.html" target="_blank"><span>Smart经济型数字量扩展</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartGM/GM_DE16_01')"  href="web-GR_GT.html" target="_blank">GM DE08/16</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartGM/GM_QR16_01')"  href="web-GR_GT.html" target="_blank">GM DR08/QR16/QT16</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartGM/GM_DR16_01')"  href="web-GR_GT.html" target="_blank">GM DR16/DR32/DT16</a>
+				<p class="title" ><a href="web-GR_GT.html" target="_blank"><span>Smart经济型模拟量扩展</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartGM/GM_AE04_01')"  href="web-GR_GT.html" target="_blank">GM AE04/8/AQ04/8</a>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartGM/GM_AM06_01')"  href="web-GR_GT.html" target="_blank">GM AM06/12/16</a>
+				<p class="title" ><a href="web-GR_GT.html" target="_blank"><span>Smart经济型温度扩展</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicA('SmartGM/GM_AN04_01')"  href="web-GR_GT.html" target="_blank">GM AN04/8/AR04/8/AT04</a>
+			</div>
+			<div class="pull-right" id="Menu-A-pic"  style="background-image: url(image/SR_ST/SR30XP_01.jpg);">
+			</div>
+		</div>
+	</div>
+
+	
+	<!--产品二级菜单 200PLC-->
+	<div id="102div" class="hiddenDiv" style="position: fixed; top: 100px; background:#ffffff; z-index: 6; width: 100%; text-align: center; 
+	     box-shadow: rgb(136, 136, 136) 0px 0px 1px 1px; display: none; filter:alpha(Opacity=20);-moz-opacity:0.9;opacity: 0.9;color:#000;" 
+	     onmouseleave="HideDiv(102,1)">
+		<div class="clearfix" style="width:100%;line-height: 1;background: white;top: 70px;box-shadow: rgb(136, 136, 136) 0px 0px 1px 1px;" >
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-200CPU.html" target="_blank" style="color:#1F7BD0"><span >200标准主机</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('200CPU/CPU222_004')"  href="web-200CPU.html" target="_blank">CPU222/4/5/6/8</a>
+				<p class="title" ><a href="web-EM2XX.html" target="_blank"><span>200标准数字量扩展</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM221_001')"  href="web-EM2XX.html" target="_blank">EM221/2/3</a>
+				<!--<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM222_001')"  href="web-EM2XX.html" target="_blank">EM222 输出模块</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM223_001')"  href="web-EM2XX.html" target="_blank">EM223 混合模块</a>-->
+				<p class="title" ><a href="web-EM2XX.html" target="_blank"><span>200标准模拟量扩展</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM231_001')"  href="web-EM2XX.html" target="_blank">EM231/2/3 </a>
+				<!--<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM232_001')"  href="web-EM2XX.html" target="_blank">EM232 输出模块</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM235_001')"  href="web-EM2XX.html" target="_blank">EM235 混合模块</a>-->
+				<p class="title" ><a href="web-EM2XX.html" target="_blank"><span>200标准温度扩展</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM231-RTD_001')"  href="web-EM2XX.html" target="_blank">EM231-4RTD/4TC/8TC</a>
+				<!--<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM231-TC_001')"  href="web-EM2XX.html" target="_blank">EM231-4TC热电偶</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('EM2XX/EM231-TC_004')"  href="web-EM2XX.html" target="_blank">EM231-8TC热电偶</a>-->
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-200GPU.html" target="_blank" style="color:#1F7BD0"><span>200经济型主机</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('200GPU/GPU221-ETH_001')"  href="web-200GPU.html" target="_blank">GPU221/2/3/4/6/8</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('200GPU/GPU221-ETH_001')"  href="web-200GPU.html" target="_blank">MPU222</a>
+				<p class="title" ><a href="web-GM2XX.html" target="_blank"><span>200经济型数字量扩展</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM221_001')"  href="web-GM2XX.html" target="_blank">GM221/2/3</a>
+				<!--<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM222_001')"  href="web-GM2XX.html" target="_blank">GM222 输出模块</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM223-I8RQ8_001')"  href="web-GM2XX.html" target="_blank">GM223 混合模块</a>-->
+			    <p class="title" ><a href="web-GM2XX.html" target="_blank"><span>200经济型模拟量扩展</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM231_001')"  href="web-GM2XX.html" target="_blank">GM231/2/3</a>
+				<!--<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM232_001')"  href="web-GM2XX.html" target="_blank">GM232 输出模块</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM235-AI4AQ2_001')"  href="web-GM2XX.html" target="_blank">GM235 混合模块</a>-->
+				<p class="title" ><a href="web-GM2XX.html" target="_blank"><span>200经济型温度扩展</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM231-P4_001')"  href="web-GM2XX.html" target="_blank">GM231-P4/P8/N8</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('GM2XX/GM235-P8AQ4_001')"  href="web-GM2XX.html" target="_blank">GM235-P8AQ4</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-PPI-CH340.html" target="_blank"><span >编程电缆</span></p>
+				<a class="Menu-B" onmouseover="showMenuPicB('USB-PPI/PPI-CH340_001')"  href="web-PPI-CH340.html" target="_blank">经济型编程线</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('USB-PPI/PPI-MianQu_001')"  href="web-PPI-CH340.html" target="_blank">免驱动型编程线</a>
+				<a class="Menu-B" onmouseover="showMenuPicB('USB-PPI/PPI-GeLi_001')"  href="web-PPI-CH340.html" target="_blank">免驱隔离型编程线</a>
+			</div>
+			<div class="pull-right" id="Menu-B-pic"  style="background-image: url(image/200CPU/CPU224XP_001.jpg);"> <!-- 默认画面-->
+			</div>
+		</div>
+	</div>
+	
+	<!--产品二级菜单 远程IO和扩展模块-->
+	<div id="103div" class="hiddenDiv" style="position: fixed; top: 70px; background:#ffffff; z-index: 6; width: 100%; text-align: center; 
+		box-shadow: rgb(136, 136, 136) 0px 0px 1px 1px; display: none; filter:alpha(Opacity=20);-moz-opacity:0.9;opacity: 0.9;color:#000;" 
+		onmouseleave="HideDiv(103,2)">
+		<div class="clearfix" style="width:100%;line-height: 1;background: white;top: 70px;" >
+			<div class="group pull-left c-pointer" >
+				<p class="title"><a href="web-PM.html" target="_blank" style="color:#1F7BD0"><span>PM模块机头</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/NET_IO')"  href="web-PM.html" target="_blank">NET/MODBUS IO</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/SB_PLINK')"  href="web-PM.html" target="_blank">SB/DP PLINK</a>
+				<p class="title" ><a href="web-PM.html" target="_blank"><span>PM数字量扩展模块</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/PM_DE16')"  href="web-PM.html" target="_blank">PM DE08/16</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/PM_QR16')"  href="web-PM.html" target="_blank">PM DR08/QR16/QT16</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/PM_DR16')"  href="web-PM.html" target="_blank">PM DR16/32/DT16</a>
+				<p class="title" ><a href="web-PM.html" target="_blank"><span>PM模拟量扩展模块</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/PM_AE04')"  href="web-PM.html" target="_blank">PM AE04/8/AQ02/4/8</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/PM_AM04')"  href="web-PM.html" target="_blank">PM AM04/06/08/12/16</a>
+				<p class="title" ><a href="web-PM.html" target="_blank"><span>PM温度扩展模块</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartPM/PM_AR04')"  href="web-PM.html" target="_blank">PM AR04/8/AN04/8/AT04</a>
+			</div>
+			<!--<div class="group pull-left c-pointer" >
+			</div>-->
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-SmartGM.html" target="_blank" style="color:#1F7BD0"><span>GM模块机头</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/机头展示图')"  href="web-SmartGM.html" target="_blank">Gnet IO / G485 IO</a>
+				<p class="title" ><a href="web-PM.html" target="_blank"><span>GM模拟量扩展模块</span></p>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/GM_DE16_01')"  href="web-SmartGM.html" target="_blank">GM DE08/16</a>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/GM_QR16_01')"  href="web-SmartGM.html" target="_blank">GM DR08/QR16/QT16</a>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/GM_DR16_01')"  href="web-SmartGM.html" target="_blank">GM DR16/DR32/DT16</a>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/GM_AE04_01')"  href="web-SmartGM.html" target="_blank">GM AE04/8/AQ04/8</a>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/GM_AM06_01')"  href="web-SmartGM.html" target="_blank">GM AM06/12/16</a>
+				<a class="Menu-A" onmouseover="showMenuPicD('SmartGM/GM_AN04_01')"  href="web-SmartGM.html" target="_blank">GM AN04/8/AR04/8/AT04</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-SmartDM.html" target="_blank" style="color:#1F7BD0"><span>DBUS数字量扩展</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_DE16')"  href="web-SmartDM.html" target="_blank">DM DE16</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_QR16')"  href="web-SmartDM.html" target="_blank">DM QR16/32/DR16/32</a>
+				<p class="title" ><a href="web-SmartDM.html" target="_blank"><span>DBUS模拟量扩展</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_AE08')"  href="web-SmartDM.html" target="_blank">DM AE08/16/32/AQ04/8</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_AM06')"  href="web-SmartDM.html" target="_blank">DM AM06/12</a>
+				<p class="title" ><a href="web-SmartDM.html" target="_blank"><span>DBUS温度扩展</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_AR08_8PT100')"  href="web-SmartDM.html" target="_blank">DM AR/N/T08</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_AE16_8NTC8AI')"  href="web-SmartDM.html" target="_blank">DM AE16-8NTC8AI/12NTC4AI</a>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_AM06_4NTC2AQ')"  href="web-SmartDM.html" target="_blank">DM AM06-4NTC2AQ</a>
+				<p class="title" ><a href="web-SmartDM.html" target="_blank"><span>DBUS综合扩展</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartDM/DM_DR16AM12')"  href="web-SmartDM.html" target="_blank">DM DR16AM12-8DI8DQ8AI4AQ</a>
+			</div>
+			<!--<div class="group pull-left c-pointer" >
+			</div>-->
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-Smart-EM.html" target="_blank" style="color:#1F7BD0"><span>485称重模块</span></p>
+				<a class="Menu-D" onmouseover="showMenuPicD('SmartEM/EM_AW04')"  href="web-Smart-EM.html" target="_blank">EM AW01/2/4</a>
+			</div>
+			<div class="pull-right" id="Menu-D-pic"  style="background-image: url(image/SmartPM/NET_IO.jpg);">
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--产品二级菜单 一体机和变送器-->
+	<div id="104div" class="hiddenDiv" style="position: fixed; top: 70px; background:#ffffff; z-index: 6; width: 100%; text-align: center; 
+		box-shadow: rgb(136, 136, 136) 0px 0px 1px 1px; display: none; filter:alpha(Opacity=20);-moz-opacity:0.9;opacity: 0.9;color:#000;"
+		onmouseleave="HideDiv(104,3)">
+		<div class="clearfix" style="width:100%;line-height: 1;background: white;top: 70px;">
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-HMI.html" target="_blank"><span>Smart 4.3寸一体机</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/H4S_002')"  href="web-HMI.html" target="_blank">H4SR10/20/24</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/H4S_002')"  href="web-HMI.html" target="_blank">H4ST10/20/24</a>
+				<p class="title" ><a href="web-HMI.html" target="_blank"><span>200-7寸一体机</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/HMI200_001')"  href="web-HMI.html" target="_blank">H7-222R/224R/228R</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/HMI200_001')"  href="web-HMI.html" target="_blank">H7-222T/224T/228T</a>
+			</div><div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-HMI.html" target="_blank"><span>Smart 7寸一体机</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/H7S_001')"  href="web-HMI.html" target="_blank">H7SR10/20/30</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/H7S_001')"  href="web-HMI.html" target="_blank">H7ST10/20/30</a>
+				<p class="title" ><a href="web-HMI.html" target="_blank"><span>Smart 7寸物联网一体机</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/i7S_001')"  href="web-HMI.html" target="_blank">i7SR10/20/30-WIFI</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/i7S_001')"  href="web-HMI.html" target="_blank">i7ST10/20/30-WIFI</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/i7S_001')"  href="web-HMI.html" target="_blank">i7SR10/20/30-4G</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/i7S_001')"  href="web-HMI.html" target="_blank">i7ST10/20/30-4G</a>
+			</div><div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-HMI.html" target="_blank"><span>Smart 10寸一体机</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/H10S_001')"  href="web-HMI.html" target="_blank">H10SR10/20/30</a>
+				<a class="Menu-E" onmouseover="showMenuPicE('HMI/H10S_001')"  href="web-HMI.html" target="_blank">H10ST10/20/30</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-GS700.html" target="_blank"><span>供水控制器</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('GS700/0011')"  href="web-GS700.html" target="_blank">GS700</a>
+			</div>
+			<div class="group pull-left c-pointer" >
+				<p class="title" ><a href="web-T100.html" target="_blank"><span>温度变送器</span></p>
+				<a class="Menu-E" onmouseover="showMenuPicE('Sensor/T100_001')"  href="web-T100.html" target="_blank">温度变送器</a>
+			</div>
+			<div class="pull-right" id="Menu-E-pic"  style="background-image: url(image/HMI/HMI200_001.jpg);">
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</div>
+
+<!--主图-->
+<div class="">
+	<a href="web-200GPU.html" target="_blank">
+		<div class="icon" style="display: block;opacity:1;background-image: url(image/web-b2.jpg);"></div>
+	</a>
+	<a href="web-HMI.html" target="_blank">
+		<div class="icon" style="background-image: url(image/web-b3.jpg);"></div>
+	</a>
+	<a href="web-GR_GT.html" target="_blank">
+		<div class="icon" style="background-image: url(image/web-b6.jpg);"></div>
+	</a>
+
+  		<img src="image/i-left.png" style="position: absolute;width: 70px;top:240px;left: 7px;opacity: 0.8;z-index:20;" onClick="ImgShow(0)" 
+  		onmouseover="this.style.opacity='1'"onmouseout="this.style.opacity='0.5'"/>
+  		<img src="image/i-right.png" style="position: absolute;width: 70px;top:240px;right: 20px;opacity: 0.8;z-index:20;" onClick="ImgShow(1)" 
+  		onmouseover="this.style.opacity='1'"onmouseout="this.style.opacity='0.5'"/>
+</div>
+<div class="spot"></div>
+<!--video-->
+		<div style="width:1032px;height: 500px;margin: 0 auto;margin-top: 40px;margin-bottom: 40px; display: flex;justify-content: space-around;">
+			<div class="video">
+				<img src="./image/SR_ST/COVER1.jpg" style="position: absolute;z-index: 9;width: 450px;height: 500px" onclick="this.style.display='none'">
+				<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=l3572mu6wi4" allowFullScreen="true"></iframe>
+			</div>
+			<!--<div class="video">
+				<img src="./image/SmartPM/PM_FP1.jpg" style="position: absolute;z-index: 9;width: 450px;height: 500px" onclick="this.style.display='none'">
+				<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=c351100jtfs" allowFullScreen="true"></iframe>
+			</div>-->
+		</div>
+<!--		<div style="width:1032px;height: 500px;margin: 0 auto;margin-top: 40px;margin-bottom: 40px; display: flex;justify-content: space-around;">
+			<div class="video">
+				<img src="./image/SmartSB/SB_AM03_FP.jpg" style="position: absolute;z-index: 9;width: 450px;height: 500px" onclick="this.style.display='none'">
+				<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=p0971g30o76" allowFullScreen="true"></iframe>
+			</div>
+		</div>
+		<div style="width:1032px;height: 500px;margin: 0 auto;margin-top: 40px;margin-bottom: 40px; display: flex;justify-content: space-around;">
+			<div class="video">
+				<img src="./image/SmartSB/SB_AM03_FP.jpg" style="position: absolute;z-index: 9;width: 450px;height: 500px" onclick="this.style.display='none'">
+				<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=p0971g30o76" allowFullScreen="true"></iframe>
+			</div>
+		</div> -->
+	<!-- 单品展示区-->
+    <div class="Oshoe">
+			<ul class="channel-pro-list">
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-SR_ST.html"  target="_blank"
+							title="SR20XP/ST20XP">
+							<div class="p-img_1">
+								<img alt="SR20XP/ST20XP" src="image/SR_ST/SR_ST_01.jpg" style="width: 240px; height: 240px; padding: 10px;">
+							</div>
+                            <div class="pr_name">"工贝Smart标准型主机"
+                            	<br>
+                                <i class="Colo_blue">CR/SR/ST系列</i>
+							</div>
+							<div class="p-pri_ce">
+								<span class="p_price_1">仅扩展工贝EM扩展模块</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-Smart-EM.html"  target="_blank"
+							title="GB EM DR16">
+							<div class="p-img_1">
+								<img alt="GB EM DE16/QR16/DR16/DR32" src="image/SmartEM/EM_B.jpg">
+							</div>
+                            <div class="pr_name">"工贝SMART标准型扩展模块"
+                            	<br>
+                                <i class="Colo_blue">数字量/模拟量/温度/称重</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">仅扩展工贝Smart主机</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-SB.html"  target="_blank"
+							title="SB CM01/02">
+							<div class="p-img_1">
+								<img alt="SB CM01/02" src="image/SmartSB/SB_AE01_06.jpg" style="width: 150px; height: 150px; padding: 50px;">
+							</div>
+                            <div class="pr_name">"工贝SMART信号板"
+                            	<br>
+                                <i class="Colo_blue">通讯/数字量/模拟量/温度</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">种类丰富，即插即用</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-GR_GT.html"  target="_blank"
+							title="GB GR10XP/GT10XP">
+							<div class="p-img_1">
+								<img alt="GB GR10XP/GT10XP" src="image/GR_GT/主机直插模块.jpg" style="width: 240px; height: 240px; padding: 5px;">
+							</div>
+                            <div class="pr_name">"工贝Smart经济型PLC"
+                            	<br>
+                                <i class="Colo_blue">板式主机和扩展模块</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">种类丰富，价格更低</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-SmartGM.html"  target="_blank"
+							title="GB GM DE16 QR16 DR16">
+							<div class="p-img_1">
+								<img alt="GB DE16 QR16 DR16" src="image/SmartGM/机头扩展模块.jpg" style="width: 240px; height: 240px; padding: 5px;">
+							</div>
+                            <div class="pr_name">"工贝板式远程IO模块"
+                            	<br>
+                                <i class="Colo_blue">数字量/模拟量/温度</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">搭配Gnet IO/G485 IO机头</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-200CPU.html"  target="_blank"
+							title="GB CPU222">
+							<div class="p-img_1">
+								<img alt="GB CPU222" src="image/200CPU/CPU_00.jpg" style="width: 220px; height: 220px; padding: 15px;">
+							</div>
+                            <div class="pr_name">"工贝200标准型主机"
+                            	<br>
+                                <i class="Colo_blue">CPU222...CPU228</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">全面兼容原厂主机</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-EM2XX.html"  target="_blank"
+							title="数字量组合模块">
+							<div class="p-img_1">
+								<img alt="数字量组合模块" src="image/EM2XX/EM232_001.jpg" style="width:250px ;height:250px">
+							</div>
+                            <div class="pr_name">"工贝200标准型扩展模块"
+                            	<br>
+                                <i class="Colo_blue">数字量/模拟量/温度</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">兼容原厂模块，可混搭使用</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-200GPU.html"  target="_blank"
+							title="GPU221-ETH">
+							<div class="p-img_1">
+								<img alt="GPU221-ETH" src="image/200GPU/200GPU_01.jpg" style="width: 170px; height: 170px; padding: 40px;">
+							</div>
+                            <div class="pr_name">"工贝200经济型主机"
+                            	<br>
+                                <i class="Colo_blue">GPU221-ETH...GPU228</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">全面兼容原厂主机</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-GM2XX.html"  target="_blank"
+							title="GM223">
+							<div class="p-img_1">
+								<img alt="GM223" src="image/GM2XX/GM223_001.jpg" style="width: 200px; height: 200px; padding: 25px;">
+							</div>
+                            <div class="pr_name">"工贝200经济型扩展模块"
+                            	<br>
+                                <i class="Colo_blue">数字量/模拟量/温度</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">兼容原厂模块，可混搭使用</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-PM.html"  target="_blank"
+							title="GB PM AM04/06/08/12/16">
+							<div class="p-img_1">
+								<img alt="GB PM AM04/06/08/12/16" src="image/SmartPM/FM.png" >
+							</div>
+                            <div class="pr_name">"远程IO模块"
+                            	<br>
+                                <i class="Colo_blue">数字量/模拟量/温度</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">搭配工贝机头使用</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a  href="web-SmartDM.html"  target="_blank"
+							title="GB EM AE08/16/32">
+							<div class="p-img_1">
+								<img alt="GB EM AE08/16/32" src="image/SmartDM/DM_AM06_12.jpg" style="width: 200px; height: 200px; padding: 10px;">
+							</div>
+                            <div class="pr_name">"Smart DBUS扩展模块"
+                            	<br>
+                                <i class="Colo_blue">数字量/模拟量/温度/综合</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">Smart主机低成本扩展模块</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-HMI.html"  target="_blank"
+							title="一体机">
+							<div class="p-img_1">
+								<img alt="一体机" src="image/HMI/H4.jpg" style="center；width:230px ;height:250px;padding: 10px 0px 0px 0px;">
+							</div>
+                            <div class="pr_name">"4.3寸一体机"
+                            	<br>
+                                <i class="Colo_blue">带模拟量和扩展口，支持信号板</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">MCGS+SmartPLC</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-HMI.html"  target="_blank"
+							title="一体机">
+							<div class="p-img_1">
+								<img alt="一体机" src="image/HMI/H72.jpg" style="center；width:230px ;height:250px;padding: 5px 0px 0px 0px;">
+							</div>
+                            <div class="pr_name">"7寸一体机"
+                            	<br>
+                                <i class="Colo_blue">带模拟量和扩展口</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">MCGS+200PLC/SmartPLC</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-HMI.html"  target="_blank"
+							title="一体机">
+							<div class="p-img_1">
+								<img alt="一体机" src="image/HMI/i7S.jpg" style="center；width:230px ;height:250px;padding: 5px 0px 0px 0px;">
+							</div>
+                            <div class="pr_name">"7寸物联网一体机WIFI/4G"
+                            	<br>
+                                <i class="Colo_blue">带模拟量和扩展口，支持信号板</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">MCGS+SmartPLC</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-HMI.html"  target="_blank"
+							title="一体机">
+							<div class="p-img_1">
+								<img alt="一体机" src="image/HMI/H10.jpg" style="width:250px ;height:250px;padding:0px 0px 0px 0px;">
+							</div>                                          
+                            <div class="pr_name">"10寸一体机"
+                            	<br>
+                                <i class="Colo_blue">带模拟量和扩展口</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1">MCGS+SmartPLC</span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-PPI-CH340.html"  target="_blank"
+							title="经济型PPI编程电缆">
+							<div class="p-img_1">
+								<img alt="经济型PPI编程电缆" src="image/USB-PPI/PPI-CH340_001.jpg" style="width: 180px; height: 180px; padding: 35px;">
+							</div>
+                            <div class="pr_name">"PPI编程电缆"
+                            	<br>
+                                <i class="Colo_blue">经济型/免驱型/免驱隔离型</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1"></span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-T100.html"  target="_blank"
+							title="智能温度变送器">
+							<div class="p-img_1">
+								<img alt="智能温度变送器" src="image/Sensor/T100_001.jpg" style="width: 180px; height: 180px; padding: 35px;">
+							</div>
+                            <div class="pr_name">"智能温度变送器 GB-T100"
+                            	<br>
+                                <i class="Colo_blue">软件组态 任意量程</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1"></span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-GS700.html"  target="_blank"
+							title="供水控制器">
+							<div class="p-img_1">
+								<img alt="供水控制器" src="image/GS700/0011.jpg" style="width:250px ;height:250px">
+							</div>
+                            <div class="pr_name">"供水控制器 GB GS700"
+                            	<br>
+                                <i class="Colo_blue">无负压、恒压模式可随意切换</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1"></span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li style="border-bottom: 1px solid rgb(239, 239, 239);">
+					<div class="bor_d">
+						<a href="web-MCGS.html"  target="_blank"
+							title="昆仑通态组态屏">
+							<div class="p-img_1">
+								<img alt="供水控制器" src="image/MCGS/MCGS_001.jpg" style="width:250px ;height:250px">
+							</div>
+                            <div class="pr_name">"昆仑通态组态屏"
+                            	<br>
+                                <i class="Colo_blue">4.3寸、7寸、10寸、12寸、15寸</i>
+							</div>
+							<div class="p-pri_ce">
+								<!--<i class="p_price_1">¥</i>-->
+								<span class="p_price_1"> 物联网WIFI/4G</span>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+<div style="width:1200px;height: 83px;background: #ededed; margin: 0 auto;margin-bottom: 25px;"><img style="width: 1200px;height: 83px;"src="image/foot.jpg"></div>
+        <div class="foot">
+        <div class="con">
+            <div class="foot_cop_left">
+                <i>Copyright © 2019 济南工贝电子科技有限公司 版权所有 <a href="http://beian.miit.gov.cn" target="_blank" style="color:  #878787;">
+                	鲁ICP备18000413号</a><!--  苏公网安备 32031202000301号--></i>
+                <div style="display:none"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/web-index.js"></script>
+<script>
+
+var opa=10
+var icon=document.getElementsByClassName('icon')
+var dian=document.getElementsByClassName('dian')
+var zsd=document.getElementsByClassName('spot')
+var width=document.documentElement.clientWidth//获取浏览器初始宽度
+var nw=''//获取新增浏览器宽度
+var wnum=''//计算新增宽度
+	var Num='' //下一张正在显示的图片length
+	var inum=''//当前正在显示的图片length
+var len=icon.length//图片length
+//图片检测
+function wshow(){
+nw=document.documentElement.clientWidth-width//获取浏览器新增宽度
+for (var o=0;o<icon.length;o++)
+    {
+        var iwidth=icon[o].naturalWidth;
+        var iheight=icon[o].naturalHeight;
+        var rnum=iwidth-width
+        if(iwidth-iheight==0)
+        {
+            icon[o].style.width='100%'
+            icon[o].style.right="0px"
+        }
+        if(iwidth>600 && iwidth-iheight!=0)
+        {
+            icon[o].style.right=rnum/2+'px'
+        }
+    }
+}
+window.addEventListener("resize", wshow);
+wshow();
+var s_num=''
+//指示点
+setTimeout(function addDiv() {
+for (var x=0;x<icon.length;x++)
+{
+	var div = document.createElement("div");
+	var top=document.getElementsByClassName("spot")
+	div.classList.add('dian')
+	top[0].appendChild(div);
+	dian[0].classList.add('dian-show')
+	s_num=x+1
+}
+	var zn=width-s_num*23
+	zsd[0].style.right=zn/2+'px'
+},1)
+//轮播控制
+setInterval("ImgShow()",5000)
+function ImgShow(io){
+    for(var i=0;i<icon.length;i++)
+        {
+            if (icon[i].style.display=='block')
+            {
+                inum=i
+                dian[i].classList.add('dian-show');
+            }
+            else
+            {
+            	dian[i].classList.remove('dian-show');
+            }
+        }
+    if(io==0)
+    {
+        Num=inum-1
+        if(Num<0)
+        {
+            Num=icon.length-1
+        }
+    }
+    else
+    {
+        Num=inum+1
+        if (Num==icon.length) 
+        {
+            Num=0
+        }
+    }
+//不透明度设置
+var timer=setInterval(function (){
+    if(icon[inum].style.opacity>=0)
+    {
+        opa--
+        icon[inum].style.opacity=opa/10
+    }
+    else
+    {
+        icon[inum].style.display='none'
+        dian[inum].classList.remove('dian-show');
+        opa++
+        dian[Num].classList.add('dian-show');
+        icon[Num].style.display='block'
+        icon[Num].style.opacity=opa/10
+
+        if(icon[Num].style.opacity>=1)
+        {
+          clearInterval(timer)
+        }
+        if(opa>10)
+        {
+            opa=10
+        }
+    }
+//指示点设置
+},20)
+}
+	$(".channel-pro-list li").hover(
+	function(){
+		$(this).find(".bor_d").addClass("boe").siblings().removeClass("boe")}
+		,function(){$(this).find(".bor_d").removeClass("boe")});
+		
+	
+	$(document).ready(function () {
+		
+		var a = $(".channel-pro-list li").siblings().length;
+		
+		if(a<4){
+			if(a==0){
+				$(".channel-pro-list li").css("width","99%");
+			}else{
+				wid = 99/(a)+"%";
+				$(".channel-pro-list li").siblings().css("width",wid);
+			}
+		}if(a>4){
+			var b = a%4;
+			wid = 99/b+"%";
+			for(var i=0;i<=b;i++){
+				$(".channel-pro-list li").siblings().eq(a-i).css("width",wid);
+			}
+		}
+	});	
+</script>
