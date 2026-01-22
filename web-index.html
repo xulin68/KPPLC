@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/favicon.ico" rel="icon" type="image/x-icon" />
+
+<title>卡片式PLC说明书和接线图</title>
+<link rel="stylesheet" type="text/css" href="css/web-product.css">
+<script src="js/jquery.js"></script>
+<script src="js/EM.js"></script>
+<script>
+$(document).ready(function () {
+	$(".ulTitle .liTitle").click(function () {
+		$(this).toggleClass("selected").siblings().removeClass("selected");
+		var b = $(".ulTitle .liTitle").index(this);
+		var a = $(this).position()["left"] ;
+		$(this).parent().parent().siblings(".divCons").css("display", "none");
+		$(".divCons").eq(b).fadeIn("fast");
+		$(this).parent(".ulTitle").stop().animate({backgroundPosition:a});
+	});
+});
+window.onresize=widthTest;//当窗口改变宽度时执行此函数
+function widthTest()
+  {
+   var winW = $(window).width();
+   if( $(window).width() <= 991 ) 
+   {
+       window.location.href="index.html"
+   }
+  }
+</script>
+
+</head>
+
+<body>
+
+<!-- 头部小蓝条 -->
+<div class="small_banner clearfix">
+	<div class="nav-bar clearfix">
+
+        <div class="center-wrap">
+            <ul>
+                <li><a style="color:#FFFFFF">卡片式PLC说明书和接线图</a></li>
+            </ul>
+        </div>
+        <!--<div class="banner-shop">
+                    <img src="./image/cart.png"><a href="http://shop459074486.taobao.com" target="_blank" 
+                    style="color:#FFFFFF">立即购买</a>
+        </div>-->
+	</div>
+</div>
+<!--  主要内容部分-->
+<section id="content-container" class="clearfix">
+		<div id="main-wrap" class="clearfix">
+			<!--START 产品内容-->
+			<div class="page_content_right sub-content page_product_padding">
+				<div class="clearfix iso-space product_space">
+                        <!-- 默认展示的标签内容 display:block-->
+						<div class="divCons divDis" id="content" style="display: block;">
+							<li class="odd">
+								说明书
+							</li>
+							<a href="./file/【工贝电子】GB Smart标准型PLC产品说明书.pdf">
+            					<div class="d-text"><text style="margin-left:10px;">卡片式PLC产品说明书（点此下载查看）</div>
+            				</a>
+							<!--加一行空白边  -->
+        					<div style="padding-bottom:30px;"></div>   
+							<li class="odd">
+								接线图
+							</li>
+							<div align="center" class="sum">
+								<img src="./image/EM_DE08接线图.jpg"alt="">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./image/EM_DE16接线图.jpg"alt="">
+							</div>
+							<p class="title3">
+								EM DE08接线图&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EM DE16接线图
+							</p>
+							<br/>
+							<div align="center" class="sum">
+								<img src="./image/EM_DE32接线图.jpg"alt="">&nbsp;&nbsp;<img src="./image/EM_DR08接线图.jpg"alt="">
+							</div>
+							<p class="title3">
+								EM DE32接线图&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EM DR08接线图
+							</p>
+							<br/>
+						</div>
+					</div>
+					<!-- END of page_content-->
+				</div>
+				<br>
+				<div class="bdsharebuttonbox bdshare-button-style0-16"
+					data-bd-bind="1493607501381">
+
+				</div>
+
+			</div>
+			<!--END 产品内容-->
+		</div>
+		<!-- END main-wrap -->
+		</section>
+</body>
+</html>
